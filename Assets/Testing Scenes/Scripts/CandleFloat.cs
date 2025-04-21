@@ -4,7 +4,7 @@ public class CandleFloat : MonoBehaviour
 {
     public float floatSpeed = 1f;            // Speed of bobbing
     public float floatAmount = 0.5f;         // Distance it moves up/down
-    public float moveSpeed = 0.5f;           // Forward movement speed
+    public float moveSpeed = 16.0f;           // Forward movement speed
     public float rotationSpeed = 20f;        // Optional: slow rotation
     public Transform playerCapsule;          // Assign this manually in the Inspector
 

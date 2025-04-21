@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 98d166a6af9cf4016813df26470fd3c0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161066
+  packageName: VR Interaction Framework
+  packageVersion: 3.0.4
+  assetPath: Assets/BNG Framework/Models/Oculus/OculusTouchForRift/Animation/OculusTouchRiftLeftAnimation.controller
+  uploadId: 701518

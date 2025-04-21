@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 57a5fcb361c154ec9b2405043a5d5e98
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161066
+  packageName: VR Interaction Framework
+  packageVersion: 3.0.4
+  assetPath: Assets/BNG Framework/Models/Oculus/OculusTouchForRift/Animation/OculusTouchRiftRightAnimation.controller
+  uploadId: 701518

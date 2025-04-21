@@ -11328,10 +11328,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c20fcadfe546f48a66117371d640e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatSpeed: 1
-  floatAmount: 0.5
-  moveSpeed: 1.5
-  rotationSpeed: 20
+  floatSpeed: 1.8
+  floatAmount: 0.8
+  moveSpeed: 2
+  rotationSpeed: 25
   playerCapsule: {fileID: 0}
 --- !u!114 &590502047
 MonoBehaviour:
@@ -11845,9 +11845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c20fcadfe546f48a66117371d640e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatSpeed: 1
-  floatAmount: 0.5
-  moveSpeed: 1.5
+  floatSpeed: 2
+  floatAmount: 2.8
+  moveSpeed: 2.2
   rotationSpeed: 20
   playerCapsule: {fileID: 0}
 --- !u!23 &776515088
@@ -12435,10 +12435,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f3c20fcadfe546f48a66117371d640e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatSpeed: 1
-  floatAmount: 0.5
-  moveSpeed: 1.5
-  rotationSpeed: 20
+  floatSpeed: 3
+  floatAmount: 1.5
+  moveSpeed: 4.5
+  rotationSpeed: 15
   playerCapsule: {fileID: 0}
 --- !u!23 &1031523075
 MeshRenderer:

@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SamplesInfoPanel
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HiddenMesh
   - Water
   - UI
   - 
@@ -16,7 +17,7 @@ TagManager:
   - Restricted
   - Player
   - Grabbable
-  - 
+  - MirroredCharacter
   - 
   - 
   - 

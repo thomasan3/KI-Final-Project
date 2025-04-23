@@ -17,14 +17,14 @@ public class CandleFloat : MonoBehaviour
         // If not manually assigned, try to find a capsule in the scene
         if (playerCapsule == null)
         {
-            GameObject found = GameObject.Find("PlayerCapsule");
+            GameObject found = GameObject.Find("OVRCameraRig");
             if (found != null)
             {
                 playerCapsule = found.transform;
             }
             else
             {
-                Debug.LogWarning("PlayerCapsule not found. Please assign it manually.");
+                Debug.LogWarning("OVRCameraRig not found. Please assign it manually.");
             }
         }
     }

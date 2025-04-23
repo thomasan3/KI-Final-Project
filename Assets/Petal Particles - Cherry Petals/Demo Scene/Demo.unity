@@ -940,7 +940,8 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!1 &1097310737 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1795063148231502, guid: abfb35fba4b9d0241ab822f66f51fa9e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1795063148231502, guid: abfb35fba4b9d0241ab822f66f51fa9e,
+    type: 3}
   m_PrefabInstance: {fileID: 544974389}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1109239718
@@ -1142,7 +1143,8 @@ MonoBehaviour:
   m_SoftShadowQuality: 0
 --- !u!1 &1181727336 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1830688534800398, guid: 9dca676f2ff988a45a505d56f3bd0bb6, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1830688534800398, guid: 9dca676f2ff988a45a505d56f3bd0bb6,
+    type: 3}
   m_PrefabInstance: {fileID: 2141069989}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1500534714
@@ -1530,7 +1532,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 199692057272603790, guid: 9dca676f2ff988a45a505d56f3bd0bb6, type: 3}
+    - target: {fileID: 199692057272603790, guid: 9dca676f2ff988a45a505d56f3bd0bb6,
+        type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}

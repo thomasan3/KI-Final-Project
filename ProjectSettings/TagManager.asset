@@ -3,44 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - QDSUISection
-  - QDSUIAccentColor
-  - QDSUISecondaryButton
-  - QDSUIPrimaryButton
-  - QDSUITextSecondaryInvertedColor
-  - QDSUITextInvertedColor
-  - QDSUIToggleButton
-  - QDSUIIcon
-  - QDSUITextSecondaryColor
-  - QDSUIDestructiveButton
-  - QDSUISharedThemeColor
-  - QDSUIBorderlessButton
-  - QDSUIToggleBorderlessButton
-  - QDSUIBackplateGradient
-  - QDSUITooltip
-  - QDSUIToggleSwitch
-  - Locomotion
-  - LocoButton
-  - LocoText
-  - PassThroughButton
-  - PassThrough
-  - QDSUITextInputField
-  - SamplesInfoPanel
-  - QDSUIToggleCheckboxRadio
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - HiddenMesh
+  - 
   - Water
   - UI
   - 
   - 
+  - Restricted
+  - Player
+  - Grabbable
   - 
-  - 
-  - Character
-  - MirroredCharacter
   - 
   - 
   - 

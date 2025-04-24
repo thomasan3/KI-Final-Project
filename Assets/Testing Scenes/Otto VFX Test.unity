@@ -5570,7 +5570,7 @@ ParticleSystem:
   m_GameObject: {fileID: 148015209}
   serializedVersion: 8
   lengthInSec: 5
-  simulationSpeed: 0.3
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
   ringBufferMode: 0
@@ -11925,11 +11925,7 @@ PrefabInstance:
     - target: {fileID: 319666961120822100, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: -0.026576992
-=======
-      value: -0.026574599
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 1745238009211328571, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -11974,11 +11970,7 @@ PrefabInstance:
     - target: {fileID: 2581824662108350127, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: 0.02935892
-=======
-      value: 0.029358407
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 3383859954259095344, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -12073,20 +12065,12 @@ PrefabInstance:
     - target: {fileID: 4203898523299135714, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: 0.012245625
-=======
-      value: 0.012242221
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 5376228129323388834, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
       value: -0.012848134
-=======
-      value: -0.012848639
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 5376228129323388834, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -12096,11 +12080,7 @@ PrefabInstance:
     - target: {fileID: 5376228129323388834, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: -0.0034350485
-=======
-      value: -0.0034359428
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 6278560457517021353, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -12135,11 +12115,7 @@ PrefabInstance:
     - target: {fileID: 6655084156946982609, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< HEAD
       value: -0.041014977
-=======
-      value: -0.041012574
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 7258766765732575900, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -12159,11 +12135,7 @@ PrefabInstance:
     - target: {fileID: 7367197533957481950, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
       value: 0.000000040046853
-=======
-      value: -0.00000003725289
->>>>>>> 99d6340ac1b5052bc7f26ff1f4ba2cdf8958dda3
       objectReference: {fileID: 0}
     - target: {fileID: 7367197533957481950, guid: eb6bc10f92728a546a3d8c144d0ef787,
         type: 3}
@@ -18602,7 +18574,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1632837261}
   serializedVersion: 8
   lengthInSec: 5
-  simulationSpeed: 0.2
+  simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
   ringBufferMode: 0

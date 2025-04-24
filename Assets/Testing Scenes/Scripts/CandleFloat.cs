@@ -6,7 +6,7 @@ public class CandleFloat : MonoBehaviour
     public float floatAmount = 0.5f;         // Distance it moves up/down
     public float moveSpeed = 0.5f;           // Forward movement speed
     public float rotationSpeed = 20f;        // Optional: slow rotation
-    public Transform playerCapsule;          // Assign this manually in the Inspector
+    public Transform player;          // Assign this manually in the Inspector
 
     private Vector3 startPos;
 
@@ -15,12 +15,12 @@ public class CandleFloat : MonoBehaviour
         startPos = transform.position;
 
         // If not manually assigned, try to find a capsule in the scene
-        if (playerCapsule == null)
+        if (player == null)
         {
             GameObject found = GameObject.Find("OVRCameraRig");
             if (found != null)
             {
-                playerCapsule = found.transform;
+                player = found.transform;
             }
             else
             {
@@ -37,9 +37,9 @@ public class CandleFloat : MonoBehaviour
         transform.position = floatPos;
 
         // Move toward player capsule
-        if (playerCapsule != null)
+        if (player != null)
         {
-            Vector3 direction = (playerCapsule.position - transform.position).normalized;
+            Vector3 direction = (player.position - transform.position).normalized;
             transform.position += direction * moveSpeed * Time.deltaTime;
         }
 

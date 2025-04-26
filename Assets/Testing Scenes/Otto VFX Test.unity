@@ -12092,7 +12092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &123416530
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -45778,7 +45778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &313618830
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -79337,12 +79337,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537166845}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000016391277, y: 0.0000006556511, z: 0.9981284, w: 0.061153024}
-  m_LocalPosition: {x: 0.07640434, y: -0.08479203, z: 0.02989721}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.48371628, y: 0.5157698, z: 0.51577, w: -0.48371622}
+  m_LocalPosition: {x: -166.49, y: 1.56, z: -74.788}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1526756568}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &537166847
 MonoBehaviour:
@@ -79388,7 +79388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537166845}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f3c20fcadfe546f48a66117371d640e, type: 3}
   m_Name: 
@@ -106904,7 +106904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &821144733
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -126336,7 +126336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &933220264
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -138885,7 +138885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &993589752
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -194588,7 +194588,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470168418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
   m_Name: 
@@ -194629,7 +194629,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470168418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
@@ -194686,7 +194686,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -194701,9 +194701,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1470168418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b620a1c93745b4a6794531ea8a05c2fa, type: 3}
+  m_Script: {fileID: 11500000, guid: de7f86a70ccb349da9cdb3f37b6762e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  candlePrefab: {fileID: 1470168418}
+  dissolveEffectPrefab: {fileID: 1050192713}
+  candlesToSpawn: 2
+  spawnRadius: 5
 --- !u!1001 &1470880497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200332,7 +200336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1520122488
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -205682,7 +205686,6 @@ Transform:
   m_LocalScale: {x: 59.22757, y: 59.22757, z: 131.45065}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 537166846}
   - {fileID: 17693729}
   - {fileID: 1915252967}
   - {fileID: 2081684107}
@@ -214218,17 +214221,17 @@ PrefabInstance:
     - target: {fileID: -8877335491505947266, guid: ce83860133b8b41aaad5d6bb668d1e0e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -133.96
+      value: -161.05
       objectReference: {fileID: 0}
     - target: {fileID: -8877335491505947266, guid: ce83860133b8b41aaad5d6bb668d1e0e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.33
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: -8877335491505947266, guid: ce83860133b8b41aaad5d6bb668d1e0e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -124.16
+      value: -127.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce83860133b8b41aaad5d6bb668d1e0e,
         type: 3}
@@ -233728,7 +233731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1751723840
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -294299,6 +294302,7 @@ SceneRoots:
   - {fileID: 1187670166}
   - {fileID: 1484521958}
   - {fileID: 776515090}
+  - {fileID: 537166846}
   - {fileID: 1526756568}
   - {fileID: 1588235084}
   - {fileID: 1341220356}

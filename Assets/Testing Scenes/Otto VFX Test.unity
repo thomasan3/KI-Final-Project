@@ -214566,6 +214566,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1674417254}
+    - targetCorrespondingSourceObject: {fileID: 6457276104133813294, guid: ce83860133b8b41aaad5d6bb668d1e0e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1674417256}
   m_SourcePrefab: {fileID: 100100000, guid: ce83860133b8b41aaad5d6bb668d1e0e, type: 3}
 --- !u!1001 &1589496654
 PrefabInstance:
@@ -226733,6 +226737,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019757517, y: 0.018953744, z: 0.03214098}
   m_Center: {x: 0.0011534882, y: -0.00023332608, z: 0.002307466}
+--- !u!114 &1674417256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674417249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7f86a70ccb349da9cdb3f37b6762e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candlePrefab: {fileID: 1674417249}
+  dissolveEffectPrefab: {fileID: 1632837261}
+  candlesToSpawn: 2
+  spawnRadius: 2
 --- !u!1001 &1677142404
 PrefabInstance:
   m_ObjectHideFlags: 0

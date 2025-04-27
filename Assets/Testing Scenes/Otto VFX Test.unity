@@ -226715,7 +226715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a6cc4fa8cce4542a2fe34eed156346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dissolveEffectPrefab: {fileID: 1632837261}
+  dissolveEffectPrefab: {fileID: 1050192713}
 --- !u!65 &1674417255
 BoxCollider:
   m_ObjectHideFlags: 0

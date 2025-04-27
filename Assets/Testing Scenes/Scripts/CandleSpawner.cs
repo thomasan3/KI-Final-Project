@@ -2,20 +2,23 @@ using UnityEngine;
 
 public class CandleSpawner : MonoBehaviour
 {
-    public GameObject candlePrefab;
-    public GameObject dissolveEffectPrefab;
-    public int candlesToSpawn = 2;
-    public float spawnRadius = 2f;
+    public GameObject candlePrefab;             // Prefab to spawn (should have CandleFloat + CandleTouch)
+    public GameObject dissolveEffectPrefab;     // Particles prefab
+    public int candlesToSpawn = 2;               // How many to spawn
+    public float spawnRadius = 2f;               // Spawn range around original
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponentInParent<OVRHand>() != null) // <-- changed from Hand to OVRHand
+        if (other.CompareTag("Player")) // check if it's player touching
         {
+            // Play dissolve particle effect
             if (dissolveEffectPrefab != null)
             {
-                Instantiate(dissolveEffectPrefab, transform.position, Quaternion.identity);
+                GameObject effect = Instantiate(dissolveEffectPrefab, transform.position, Quaternion.identity);
+                Destroy(effect, 3f); // Auto-destroy particles
             }
 
+            // Spawn new candles
             for (int i = 0; i < candlesToSpawn; i++)
             {
                 Vector3 offset = new Vector3(
@@ -28,6 +31,7 @@ public class CandleSpawner : MonoBehaviour
                 Instantiate(candlePrefab, spawnPosition, Quaternion.identity);
             }
 
+            // Destroy this candle after spawning
             Destroy(gameObject);
         }
     }

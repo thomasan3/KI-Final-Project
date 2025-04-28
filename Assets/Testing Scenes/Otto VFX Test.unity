@@ -270825,9 +270825,9 @@ MonoBehaviour:
   _candidateTiebreaker: {fileID: 0}
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
-  _hand: {fileID: 0}
+  _hand: {fileID: 746090810}
   _rigidbody: {fileID: 2026092424}
-  _handGrabApi: {fileID: 0}
+  _handGrabApi: {fileID: 1103350720}
   _supportedGrabTypes: 3
   _hoverOnZeroStrength: 0
   _grabOrigin: {fileID: 0}
@@ -279533,6 +279533,16 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5354377357958573541, guid: 06edf44e971658e4487ac3c97d7c8d31,
+        type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5354377357958573541, guid: 06edf44e971658e4487ac3c97d7c8d31,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 6238025211189533708, guid: 06edf44e971658e4487ac3c97d7c8d31,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -287185,9 +287195,9 @@ MonoBehaviour:
   _candidateTiebreaker: {fileID: 0}
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
-  _hand: {fileID: 0}
+  _hand: {fileID: 1169644478}
   _rigidbody: {fileID: 2142404692}
-  _handGrabApi: {fileID: 0}
+  _handGrabApi: {fileID: 1103350720}
   _supportedGrabTypes: 3
   _hoverOnZeroStrength: 0
   _grabOrigin: {fileID: 0}

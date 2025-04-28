@@ -2,37 +2,52 @@ using UnityEngine;
 
 public class CandleSpawner : MonoBehaviour
 {
-    public GameObject candlePrefab;             // Prefab to spawn (should have CandleFloat + CandleTouch)
-    public GameObject dissolveEffectPrefab;     // Particles prefab
-    public int candlesToSpawn = 2;               // How many to spawn
-    public float spawnRadius = 2f;               // Spawn range around original
+    public GameObject candlePrefab;
+    public GameObject dissolveEffectPrefab;
+    public int candlesToSpawn = 2;
+    public float spawnRadius = 6f;
+    private Transform player; // make it private
 
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.CompareTag("Player")) // check if it's player touching
+        // Try to find the player object automatically at runtime
+        GameObject playerObject = GameObject.Find("ArmatureSkinningUpdateRetarget"); // <- exact name in Hierarchy
+        if (playerObject != null)
         {
-            // Play dissolve particle effect
-            if (dissolveEffectPrefab != null)
-            {
-                GameObject effect = Instantiate(dissolveEffectPrefab, transform.position, Quaternion.identity);
-                Destroy(effect, 3f); // Auto-destroy particles
-            }
+            player = playerObject.transform;
+        }
+        else
+        {
+            Debug.LogWarning("CandleSpawner could not find player (ArmatureSkinningUpdateRetarget)!");
+        }
+    }
 
-            // Spawn new candles
-            for (int i = 0; i < candlesToSpawn; i++)
-            {
-                Vector3 offset = new Vector3(
-                    Random.Range(-spawnRadius, spawnRadius),
-                    Random.Range(0.5f, 1.5f),
-                    Random.Range(-spawnRadius, spawnRadius)
-                );
+    public void SpawnCandles()
+    {
+        if (player == null)
+        {
+            Debug.LogWarning("Player reference still missing, can't spawn candles!");
+            return;
+        }
 
-                Vector3 spawnPosition = transform.position + offset;
-                Instantiate(candlePrefab, spawnPosition, Quaternion.identity);
-            }
+        // Play dissolve particle effect
+        if (dissolveEffectPrefab != null)
+        {
+            GameObject effect = Instantiate(dissolveEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(effect, 3f);
+        }
 
-            // Destroy this candle after spawning
-            Destroy(gameObject);
+        // Spawn new candles around the PLAYER
+        for (int i = 0; i < candlesToSpawn; i++)
+        {
+            Vector2 randomCircle = Random.insideUnitCircle * spawnRadius;
+            Vector3 spawnPosition = new Vector3(
+                player.position.x + randomCircle.x,
+                player.position.y + Random.Range(0.5f, 1.5f),
+                player.position.z + randomCircle.y
+            );
+
+            Instantiate(candlePrefab, spawnPosition, Quaternion.identity);
         }
     }
 }

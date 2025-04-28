@@ -1,21 +1,42 @@
 using UnityEngine;
+using System.Collections;
+using INab.Dissolve;
+
 
 public class CandleTouch : MonoBehaviour
 {
-    public GameObject dissolveEffectPrefab;  // Drag your particle prefab here
+    private CandleDissolveTrigger dissolveTrigger;
+    private CandleSpawner candleSpawner;
+    private bool isDissolving = false;
+
+    private void Start()
+    {
+        dissolveTrigger = GetComponent<CandleDissolveTrigger>();
+        candleSpawner = GetComponent<CandleSpawner>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // make sure PlayerCapsule is tagged "Player"
+        if (!isDissolving && other.CompareTag("Player"))
         {
-            // Instantiate particle effect at candle position
-            if (dissolveEffectPrefab != null)
+            if (dissolveTrigger != null)
             {
-                Instantiate(dissolveEffectPrefab, transform.position, Quaternion.identity);
+                isDissolving = true;
+                dissolveTrigger.TriggerDissolve(); // <- Call your special candle dissolve animation!
+                StartCoroutine(DissolveAndSpawn());
             }
-
-            // Destroy the candle
-            Destroy(gameObject);
         }
+    }
+
+    private IEnumerator DissolveAndSpawn()
+    {
+        yield return new WaitForSeconds(2f); // Match your dissolve time here
+
+        if (candleSpawner != null)
+        {
+            candleSpawner.SpawnCandles();
+        }
+
+        Destroy(gameObject);
     }
 }

@@ -1,12 +1,12 @@
 using UnityEngine;
-using INab.Dissolve; // Include the namespace for Dissolver
+using INab.Dissolve;
 
 public class CandleDissolveTrigger : MonoBehaviour
 {
     private Dissolver dissolver;
     private bool hasTriggered = false;
 
-    void Start()
+    private void Start()
     {
         dissolver = GetComponent<Dissolver>();
 
@@ -18,17 +18,21 @@ public class CandleDissolveTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!hasTriggered && other.CompareTag("Player"))
+        if (hasTriggered) return;
+
+        if (other.CompareTag("Player")) // or if (other.GetComponent<OVRHand>() != null) for hand check
         {
             hasTriggered = true;
 
             if (dissolver != null)
             {
                 dissolver.Dissolve();
+                Destroy(gameObject, dissolver.duration + 0.1f); // Auto-destroy after dissolve finishes
             }
-
-            // Optional: destroy the object after dissolve finishes
-            Destroy(gameObject, dissolver.duration + 0.1f);
+            else
+            {
+                Destroy(gameObject); // Just destroy immediately
+            }
         }
     }
 }
